@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Localisations</h1>
+<h1><%= t "index.title" %></h1>
+
+<%= t "index.language_button" %>
+<%= link_to_unless_current "English", locale: "en" %>
+<%= link_to_unless_current "Francais", locale: "fr" %>
 
 <table>
   <thead>
@@ -22,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Localisation', new_localisation_path %>
+<%= link_to "Create new localisation", new_localisation_path %>
