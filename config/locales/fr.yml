@@ -10,4 +10,5 @@ fr:
   localisation_updated: "La localisation a été mise a jour avec succès"
   edit_localisation: "Modifier la localisation"
   edit: "Modifier la localisation"
-  create_localisation: "Crée une localisation"
+  create_localisation: "Créer une localisation"
+  destroy_localisation: "La localisation a été détruite avec succès"

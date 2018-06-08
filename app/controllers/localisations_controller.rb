@@ -56,7 +56,7 @@ class LocalisationsController < ApplicationController
   def destroy
     @localisation.destroy
     respond_to do |format|
-      format.html { redirect_to localisations_url, notice: 'Localisation was successfully destroyed.' }
+      format.html { redirect_to localisations_url, notice: t('destroy_localisation') }
       format.json { head :no_content }
     end
   end

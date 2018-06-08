@@ -41,3 +41,4 @@ en:
   edit_localisation: "Editing Localization"
   edit: "Edit the localization"
   create_localisation: "Create localization"
+  destroy_localisation: "Localisation was succesfully destroyed"
