@@ -1,0 +1,9 @@
+ <h1> All cities </h1>
+
+ <% @cities.each do |city| %>
+      <tr>
+        <td><%= city.name%></td>
+        <td><%= city.country %></td>
+        <td><%= city.population%></td>
+      </tr>
+<% end %>
