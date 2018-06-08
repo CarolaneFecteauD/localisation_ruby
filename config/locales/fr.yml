@@ -6,3 +6,8 @@ fr:
   destroy: "detruire"
   new_localisation: "Nouvelle localisation"
   confirm: "Etes vous certain ?"
+  localisation_created: "La localisation a ete cree avec succes"
+  localisation_updated: "La localisation a ete mise a jour avec succes"
+  edit_localisation: "Modifier la localisation"
+  edit: "Modifier la localisation"
+  create_localisation: "Cree une localisation"

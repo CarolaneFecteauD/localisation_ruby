@@ -25,10 +25,10 @@ class LocalisationsController < ApplicationController
   # POST /localisations.json
   def create
     @localisation = Localisation.new(localisation_params)
-
+    
     respond_to do |format|
       if @localisation.save
-        format.html { redirect_to @localisation, notice: 'Localisation was successfully created.' }
+        format.html { redirect_to @localisation, notice: t('localisation_created') }
         format.json { render :show, status: :created, location: @localisation }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class LocalisationsController < ApplicationController
   def update
     respond_to do |format|
       if @localisation.update(localisation_params)
-        format.html { redirect_to @localisation, notice: 'Localisation was successfully updated.' }
+        format.html { redirect_to @localisation, notice: t('localisation_updated') }
         format.json { render :show, status: :ok, location: @localisation }
       else
         format.html { render :edit }
