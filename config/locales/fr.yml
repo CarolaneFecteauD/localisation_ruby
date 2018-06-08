@@ -2,3 +2,5 @@
 fr:
   show: "Afficher"
   back: "Retourner"
+  edit: "Modifier"
+  destroy: "detruire"
