@@ -34,3 +34,5 @@ en:
   back: "Back"
   edit: "Edit"
   destroy: "Destroy"
+  new_localisation: "New localisation"
+  confirm: "Are you sure?"

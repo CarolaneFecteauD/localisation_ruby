@@ -12,9 +12,9 @@
   <tbody>
     <% @localisations.each do |localisation| %>
       <tr>
-        <td><%= link_to 'Show', localisation %></td>
-        <td><%= link_to 'Edit', edit_localisation_path(localisation) %></td>
-        <td><%= link_to 'Destroy', localisation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('show'), localisation %></td>
+        <td><%= link_to t('edit'), edit_localisation_path(localisation) %></td>
+        <td><%= link_to t('destroy'), localisation, method: :delete, data: { confirm: t('confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Localisation', new_localisation_path %>
+<%= link_to t('new Localisation'), new_localisation_path %>
