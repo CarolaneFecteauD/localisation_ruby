@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <div id = "fr">
+    <p>
+      <%= link_to "french.png",{:locale=>'fr'}%>
+    </p>
+
+  </div>
+  <div id = "en">
+    <p>
+      <%= link_to "english.png",{:locale=> 'en'} %>
+    </p>
+  </div>
+
     <%= yield %>
   </body>
 </html>
