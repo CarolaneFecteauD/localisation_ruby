@@ -7,7 +7,7 @@
   <%= f.text_field :country %>
   <%= label_tag(:population, "Population") %>
   <%= f.text_field :population %>
-  <%= f.submit "Create" %>
+  <%= f.submit t('create') %>
 <% end %>
 
-<%= link_to 'Back', cities_path %>
+<%= link_to t('back'), cities_path %>

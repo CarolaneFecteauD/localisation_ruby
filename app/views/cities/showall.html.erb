@@ -1,9 +1,17 @@
  <h1> All cities </h1>
 
  <% @cities.each do |city| %>
+ <% if city.name.length >0 %>
+ <tr>
+ 	<th><%= t('name') %></th>
+ 	<th><%= t('country') %></th>
+ 	<th><%= t('population')%></th> 
+ </tr>
       <tr>
         <td><%= city.name%></td>
         <td><%= city.country %></td>
         <td><%= city.population%></td>
       </tr>
 <% end %>
+<%end %>
+<%= link_to t('back'), cities_path %>
