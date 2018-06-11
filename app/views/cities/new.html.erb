@@ -1,11 +1,11 @@
-<h1>New City</h1>
+<h1><%= t('new_city') %></h1>
 
 <%= form_for @city, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-  <%= label_tag(:name, "Name") %>
+  <%= label_tag(:name, t('name')) %>
   <%= f.text_field :name %>
-  <%= label_tag(:country, "Country") %>
+  <%= label_tag(:country, t('country')) %>
   <%= f.text_field :country %>
-  <%= label_tag(:population, "Population") %>
+  <%= label_tag(:population, t('population')) %>
   <%= f.text_field :population %>
   <%= f.submit t('create') %>
 <% end %>

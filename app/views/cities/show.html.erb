@@ -1,8 +1,12 @@
 <p id="notice"><%= notice %></p>
+<% if Rails.application.assets.find_asset(@city.name+".jpg") == nil %>
+	<%= image_tag("https://place-hold.it/600x500") %>
+<%else%>
+<%= image_tag(@city.name+".jpg") %>
 <%= @city.name %>
 <%= @city.country %>
 <%= @city.population %>
-
+<%end%>
 <%= link_to t('edit'), edit_city_path(@city) %> |
 <%= link_to t('back'), cities_path %>
 

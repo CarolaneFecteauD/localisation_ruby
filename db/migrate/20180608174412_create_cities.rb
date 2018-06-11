@@ -9,6 +9,8 @@ class CreateCities < ActiveRecord::Migration[5.2]
       t.decimal "popdensity"
       t.decimal "area"
       t.string "region"
+      t.decimal "x"
+      t.decimal "y"
     end
   end
 end

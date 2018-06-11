@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 2018_06_08_174412) do
     t.decimal "popdensity"
     t.decimal "area"
     t.string "region"
+    t.decimal "latitude"
+    t.decimal "longitude"
   end
 
   create_table "localisations", force: :cascade do |t|
