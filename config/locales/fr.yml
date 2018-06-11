@@ -1,5 +1,10 @@
-
 fr:
+  index:
+    title: "Localisations en Francais"
+    new_locale_button: "Nouvelle Localisation"
+    language_button: "Langage: "
+  new:
+    title: "Nouvelle Localisation"
   show: "Afficher"
   back: "Retourner"
   edit: "Modifier"
@@ -12,10 +17,10 @@ fr:
   localisation_created: "La localisation a été crée avec succès"
   localisation_updated: "La localisation a été mise a jour avec succès"
   edit_localisation: "Modifier la localisation"
-  edit: "Modifier la localisation"
   create_localisation: "Créer une localisation"
   destroy_localisation: "La localisation a été détruite avec succès"
   showallcities: "Afficher tous les villes"
   cities: "Villes"
   create: "Créer"
   new_city: "Nouvelle ville"
+
