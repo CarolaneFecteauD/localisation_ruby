@@ -25,7 +25,7 @@
   </div>
   <div id = "en">
     <p>
-      <%= link_to_unless I18n.default_locale == :en,image_tag("english.png",size: "30x30"),locale: :en %>
+      <%= link_to image_tag("english.png",size: "30x30"),{:locale=> 'en'} %>
     </p>
   </div>
     <%= yield %>
