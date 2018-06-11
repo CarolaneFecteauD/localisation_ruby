@@ -2,17 +2,22 @@
 
 <h1><%= t('cities') %></h1>
 <hr>
-<table>
+<table id="citytable">
   <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
+       <th> Afficher une ville </th>
+        <th> Modifier une ville </th>
+        <th> Supprimer une ville </th>
   </thead>
 
   <tbody>
+      
+ 
+
+      
     <% @cities.each do |city| %>
+    
       <tr>
-        <td><%= link_to t('show'), city %></td>
+        <td><%= link_to city.name, city %></td>
         <td><%= link_to t('edit'), edit_city_path(city) %></td>
         <td><%= link_to t('destroy'), city, method: :delete, data: { confirm: t('confirm') } %></td>
       </tr>
